@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>繁转简</title>
+</head>
+<body>
+    <h1>繁转简</h1>
+    <form method="POST" action="/convert">
+        <textarea name="input_text" rows="10" cols="50"></textarea>
+        <br>
+        <input type="submit" value="转换">
+    </form>
+    {% if output_text %}
+    <h2>转换结果：</h2>
+    <p>{{ output_text }}</p>
+    {% endif %}
+</body>
+</html>
